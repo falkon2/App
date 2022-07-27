@@ -1,0 +1,14 @@
+@import Background from "./bg.png";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-image: `url(${ Background })`;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  /* display: flex; */
+  font-family: 'Roboto', sans-serif; 
+}
