@@ -1,1 +1,1 @@
-Web Geny, A simple yet powerfull website builder
+Web Geny, A simple yet powerfull website builder. Made with love ❤️ using react, tauri and tailwind!
