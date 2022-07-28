@@ -6,18 +6,18 @@ export const Info = () => {
 
   const blackTheme = async () => {
     try {
-      let email = 'https://www.mailto'+ sessionStorage.getItem('Email')
+      let email = 'https://mailto'+ sessionStorage.getItem('Email');
       let youtube =  sessionStorage.getItem('Youtube');
       let Name = sessionStorage.getItem('Name');
       let profession = sessionStorage.getItem('Profession');
       let country = sessionStorage.getItem('Nationality');
       let hobby = sessionStorage.getItem('Hobby');
-      await writeTextFile("webpage.html", `
+      await writeTextFile("data.html", `
       <!DOCTYPE html>
 <html>
 <head>
     <title>Web Gen</title>
-    
+    <link rel="stylesheet" type="text/css" href="{{css_path}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
@@ -27,7 +27,7 @@ export const Info = () => {
                 <li class="active"><a href=>Home</a></li>
                 <li><a href="${youtube}">Blogs</a></li>
                 <link rel="stylesheet" href="css/style.css">
-                <li><a href="${email}">Contact me</a></li>
+                <li><a href="mailto:${email}">Contact me</a></li>
                 
             </ul>
         </header>
@@ -187,11 +187,12 @@ p{
         let profession = sessionStorage.getItem('Profession');
         let country = sessionStorage.getItem('Nationality');
         let hobby = sessionStorage.getItem('Hobby');
-        await writeTextFile("webpage.html", `
+        await writeTextFile("data.html", `
         <!DOCTYPE html>
   <html>
   <head>
       <title>Web Gen</title>
+      <link rel="stylesheet" type="text/css" href="{{css_path}}">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   </head>
   <body>
@@ -355,18 +356,18 @@ p{
       }
       const redTheme = async () => {
         try {
-          let email = 'https://mailto'+ sessionStorage.getItem('Email')
+          let email = 'https://mailto'+ sessionStorage.getItem('Email');
           let youtube =  sessionStorage.getItem('Youtube');
           let Name = sessionStorage.getItem('Name');
           let profession = sessionStorage.getItem('Profession');
           let country = sessionStorage.getItem('Nationality');
           let hobby = sessionStorage.getItem('Hobby');
-          await writeTextFile("webpage.html", `
+          await writeTextFile("data.html", `
           <!DOCTYPE html>
     <html>
     <head>
         <title>Web Gen</title>
-        
+        <link rel="stylesheet" type="text/css" href="{{css_path}}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     <body>
@@ -376,7 +377,7 @@ p{
                     <li class="active"><a href=>Home</a></li>
                     <li><a href="${youtube}">Blogs</a></li>
                     <link rel="stylesheet" href="css/style.css">
-                    <li><a href="${email}">Contact me</a></li>
+                    <li><a href="mailto:${email}">Contact me</a></li>
                     
                 </ul>
             </header>

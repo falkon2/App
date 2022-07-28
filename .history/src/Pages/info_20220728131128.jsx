@@ -6,13 +6,13 @@ export const Info = () => {
 
   const blackTheme = async () => {
     try {
-      let email = 'https://www.mailto'+ sessionStorage.getItem('Email')
+      let email = 'https://mailto'+ sessionStorage.getItem('Email');
       let youtube =  sessionStorage.getItem('Youtube');
       let Name = sessionStorage.getItem('Name');
       let profession = sessionStorage.getItem('Profession');
       let country = sessionStorage.getItem('Nationality');
       let hobby = sessionStorage.getItem('Hobby');
-      await writeTextFile("webpage.html", `
+      await writeTextFile("data.html", `
       <!DOCTYPE html>
 <html>
 <head>
@@ -187,7 +187,7 @@ p{
         let profession = sessionStorage.getItem('Profession');
         let country = sessionStorage.getItem('Nationality');
         let hobby = sessionStorage.getItem('Hobby');
-        await writeTextFile("webpage.html", `
+        await writeTextFile("data.html", `
         <!DOCTYPE html>
   <html>
   <head>
@@ -355,13 +355,13 @@ p{
       }
       const redTheme = async () => {
         try {
-          let email = 'https://mailto'+ sessionStorage.getItem('Email')
+          let email = 'https://mailto'+ sessionStorage.getItem('Email');
           let youtube =  sessionStorage.getItem('Youtube');
           let Name = sessionStorage.getItem('Name');
           let profession = sessionStorage.getItem('Profession');
           let country = sessionStorage.getItem('Nationality');
           let hobby = sessionStorage.getItem('Hobby');
-          await writeTextFile("webpage.html", `
+          await writeTextFile("data.html", `
           <!DOCTYPE html>
     <html>
     <head>
