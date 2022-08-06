@@ -6,7 +6,7 @@ export const InfoTwo = () => {
 
   const greenTheme = async () => {
     try {
-      let email = 'mailto:'+ sessionStorage.getItem('Email');
+      let email = 'mailto:'+ sessionStorage.getItem('Email')
       let youtube =  sessionStorage.getItem('Youtube');
       let Name = sessionStorage.getItem('Name');
       let profession = sessionStorage.getItem('Profession');
@@ -16,7 +16,7 @@ export const InfoTwo = () => {
       <!DOCTYPE html>
 <html>
 <head>
-    <title>Webpage</title>
+    <title>Web Gen</title>
     <link rel="stylesheet" type="text/css" href="{{css_path}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
@@ -181,7 +181,7 @@ p{
     }
     const whiteTheme = async () => {
       try {
-        let email = 'mailto:'+ sessionStorage.getItem('Email');
+        let email = 'mailto:'+ sessionStorage.getItem('Email')
         let youtube =  sessionStorage.getItem('Youtube');
         let Name = sessionStorage.getItem('Name');
         let profession = sessionStorage.getItem('Profession');
@@ -191,7 +191,7 @@ p{
         <!DOCTYPE html>
   <html>
   <head>
-      <title>Webpage</title>
+      <title>Web Gen</title>
       <link rel="stylesheet" type="text/css" href="{{css_path}}">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   </head>
@@ -352,7 +352,7 @@ p{
       }
       const gradientTheme = async () => {
         try {
-          let email = 'mailto:'+ sessionStorage.getItem('Email');
+          let email = 'mailto:'+ sessionStorage.getItem('Email')
           let youtube =  sessionStorage.getItem('Youtube');
           let Name = sessionStorage.getItem('Name');
           let profession = sessionStorage.getItem('Profession');
@@ -362,7 +362,7 @@ p{
           <!DOCTYPE html>
     <html>
     <head>
-        <title>Webpage</title>
+        <title>Web Gen</title>
         <link rel="stylesheet" type="text/css" href="{{css_path}}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
@@ -536,7 +536,7 @@ p{
         {/* 1st card */}
         <div className='py-10 text-white   hover:scale-110 transition-[0.5s] '>
           <div className=' overflow-hidden rounded-lg shadow-lg shadow-green-500 bg-green-500  max-w-sm '>
-            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001739720625233940/Screenshot_24.png" alt='greenTheme' className='w-full'/>
+            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001739720625233940/Screenshot_24.png" alt='mountain' className='w-full'/>
             <div className="px-6 py-4">
               <div className='font-bold text-xl mb-2 text-center'>
                 Green Theme
@@ -554,7 +554,7 @@ p{
         <div className='py-10 text-black hover:scale-110 transition-[0.5s]'>
           <div className='rounded-lg overflow-hidden  shadow-lg shadow-white bg-white max-w-sm'>
             <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001739720251944970/Screenshot_23.png?width=1193&height=671" 
-            alt='whiteTheme' className='w-full'/>
+            alt='mountain' className='w-full'/>
             <div className="px-6 py-4">
               <div className='font-bold text-xl mb-2 text-center'>
                 White Theme
@@ -572,7 +572,7 @@ p{
         {/* 3rd card */}
         <div className='py-10 text-white hover:scale-110 transition-[0.5s]'>
           <div className='rounded-lg overflow-hidden shadow-lg max-w-sm shadow-pink-500 bg-gradient-to-r from-indigo-500 via-indigo-600 to-pink-600'>
-            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001739720914636842/Screenshot_22.png" alt='gradientTheme' className='w-full'/>
+            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001739720914636842/Screenshot_22.png" alt='mountain' className='w-full'/>
             <div className="px-6 py-4">
               <div className='font-bold text-xl mb-2 text-center'>
                 Gradient Theme

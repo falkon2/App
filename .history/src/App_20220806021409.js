@@ -1,11 +1,11 @@
-import React from 'react';
+import { React } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Welcome } from './Pages/Welcome';
 import { Details } from './Pages/Details';
 import { Info } from './Pages/Info';
 import { About } from './Pages/About';
 import { InfoTwo } from './Pages/InfoTwo';
-import './index.css'
+// import './App.css';
 function App() {
   return (
   <Routes>
@@ -18,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

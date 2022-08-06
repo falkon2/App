@@ -2,11 +2,11 @@ import { writeTextFile, BaseDirectory } from '@tauri-apps/api/fs';
 import { toast } from 'react-hot-toast'
 import { Link } from 'react-router-dom';
 import React from 'react';
-export const InfoTwo = () => {
+export const Info = () => {
 
-  const greenTheme = async () => {
+  const blackTheme = async () => {
     try {
-      let email = 'mailto:'+ sessionStorage.getItem('Email');
+      let email = 'https://www.mailto'+ sessionStorage.getItem('Email')
       let youtube =  sessionStorage.getItem('Youtube');
       let Name = sessionStorage.getItem('Name');
       let profession = sessionStorage.getItem('Profession');
@@ -16,8 +16,8 @@ export const InfoTwo = () => {
       <!DOCTYPE html>
 <html>
 <head>
-    <title>Webpage</title>
-    <link rel="stylesheet" type="text/css" href="{{css_path}}">
+    <title>Web Gen</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
@@ -55,7 +55,7 @@ html{
 }
 body{
 	
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1496150458551-140441714f2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -112,14 +112,14 @@ ul li a{
 }
 
 ul li a:hover{
-	background-color: #4caf50;
-	color: #eef7ee;
-    border: 1px solid #4caf50;
+	background-color: #fff;
+	color: #000;
+    border: 1px solid #fff;
 }
 ul li.active a{
-	background-color: #4caf50;
-	color: #eef7ee;
-    border: 1px solid #4caf50;
+	background-color: #fff;
+	color: #000;
+  border: 1px solid #fff;
 }
 
 
@@ -179,9 +179,9 @@ p{
       console.log(e);
     }
     }
-    const whiteTheme = async () => {
+    const blueTheme = async () => {
       try {
-        let email = 'mailto:'+ sessionStorage.getItem('Email');
+        let email = 'https://mailto'+ sessionStorage.getItem('Email')
         let youtube =  sessionStorage.getItem('Youtube');
         let Name = sessionStorage.getItem('Name');
         let profession = sessionStorage.getItem('Profession');
@@ -191,8 +191,7 @@ p{
         <!DOCTYPE html>
   <html>
   <head>
-      <title>Webpage</title>
-      <link rel="stylesheet" type="text/css" href="{{css_path}}">
+      <title>Web Gen</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   </head>
   <body>
@@ -200,7 +199,7 @@ p{
           <div class="main">
               <ul>
                   <li class="active"><a href=>Home</a></li>
-                  <li><a href="${youtube}">Blogs</a></li>
+                  <li><a href="https://mailto${youtube}">Blogs</a></li>
                   <link rel="stylesheet" href="css/style.css">
                   <li><a href="${email}">Contact me</a></li>
                   
@@ -230,7 +229,7 @@ p{
   }
   body{
     
-    background-image: url('https://images.unsplash.com/photo-1563293815-7d1c589bd909?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -262,7 +261,7 @@ p{
       margin: 3 1% 2 4;
       font-size: 1.5rem;
       font-weight: 600;
-      color: #000;
+      color: #fff;
       cursor: pointer;
       transition: all 0.3s ease;
       text-decoration: none;
@@ -273,13 +272,13 @@ p{
   
   ul li a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     padding: 10px 25px;
     border: 1px solid transparent;
     transition: 0.6s ease;
     font-size: 15px;
       font-weight: 600;
-      
+      color: #fff;
       cursor: pointer;
       text-decoration: none;
       text-transform: uppercase;
@@ -287,14 +286,14 @@ p{
   }
   
   ul li a:hover{
-    background-color: #000;
-    color: #fff;
-      border: 1px solid #000;
+    background-color: #0000ff;
+    color: #e8ffff;
+      border: 1px solid #0000ff;
   }
   ul li.active a{
-    background-color: #000;
-    color: #fff;
-      border: 1px solid #000;
+    background-color: #0000ff;
+    color: #e8ffff;
+      border: 1px solid #0000ff;
   }
   
   
@@ -316,7 +315,7 @@ p{
     top: 25%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: #000;
+    color: #fff;
     font-size: 200%;
       font-weight: 600;
       letter-spacing: 1px;
@@ -329,13 +328,17 @@ p{
     top: 65%;
     left: 50%;
     transform: translate(-50%,-50%);
-      color: #000;
+      color: #fff;
       font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: 1px;
       text-align: center;
-      font-size: 200%;
       z-index: 2;
+  }
+  
+  p{
+    color: #fff;
+    font-size: 200%;
   }
   
   
@@ -350,9 +353,9 @@ p{
         console.log(e);
       }
       }
-      const gradientTheme = async () => {
+      const redTheme = async () => {
         try {
-          let email = 'mailto:'+ sessionStorage.getItem('Email');
+          let email = 'https://mailto'+ sessionStorage.getItem('Email')
           let youtube =  sessionStorage.getItem('Youtube');
           let Name = sessionStorage.getItem('Name');
           let profession = sessionStorage.getItem('Profession');
@@ -362,8 +365,8 @@ p{
           <!DOCTYPE html>
     <html>
     <head>
-        <title>Webpage</title>
-        <link rel="stylesheet" type="text/css" href="{{css_path}}">
+        <title>Web Gen</title>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     <body>
@@ -401,7 +404,7 @@ p{
     }
     body{
       
-      background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1129&q=80');
+      background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1524721696987-b9527df9e512?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80');
       background-size: cover;
       background-repeat: no-repeat;
       overflow: hidden;
@@ -458,14 +461,14 @@ p{
     }
     
     ul li a:hover{
-      background-color: #f85085;
-      color: #fff;
-        border: 1px solid #f85085;
+      background-color: #de0a26;
+      color: #ffcbd1;
+        border: 1px solid #de0a26;
     }
     ul li.active a{
-      background-color: #f85085;
-      color: #fff;
-        border: 1px solid #f85085;
+      background-color: #de0a26;
+      color: #ffcbd1;
+      border: 1px solid #de0a26;
     }
     
     
@@ -535,34 +538,34 @@ p{
       <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-3 justify-items-center mt-20 '>
         {/* 1st card */}
         <div className='py-10 text-white   hover:scale-110 transition-[0.5s] '>
-          <div className=' overflow-hidden rounded-lg shadow-lg shadow-green-500 bg-green-500  max-w-sm '>
-            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001739720625233940/Screenshot_24.png" alt='greenTheme' className='w-full'/>
+          <div className=' overflow-hidden rounded-lg shadow-lg shadow-white bg-black  max-w-sm '>
+            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001730224079245403/Screenshot_19.png" alt='mountain' className='w-full'/>
             <div className="px-6 py-4">
               <div className='font-bold text-xl mb-2 text-center'>
-                Green Theme
+                Black Theme
               </div>
 
             </div>
             <div className='justify-center items-center flex '>
-              <button onClick={greenTheme} className="bg-white  text-green-500 w-[200px] transition-[0.5s] rounded-lg font-bold my-6 mx-auto py-3 ring-2 ring-white hover:ring-green-700 hover:bg-green-700  hover:shadow-xl hover:shadow-green-700 hover:text-white hover:scale-110">
+              <button onClick={blackTheme} className="bg-white  text-black w-[200px] transition-[0.5s] rounded-lg font-bold my-6 mx-auto py-3 ring-2 ring-white hover:ring-black hover:bg-black  hover:shadow-xl hover:shadow-white hover:text-white hover:scale-110">
                 Download
               </button>
             </div>
           </div>
         </div>
         {/* 2nd card */}
-        <div className='py-10 text-black hover:scale-110 transition-[0.5s]'>
-          <div className='rounded-lg overflow-hidden  shadow-lg shadow-white bg-white max-w-sm'>
-            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001739720251944970/Screenshot_23.png?width=1193&height=671" 
-            alt='whiteTheme' className='w-full'/>
+        <div className='py-10 text-white hover:scale-110 transition-[0.5s]'>
+          <div className='rounded-lg overflow-hidden  shadow-lg shadow-blue-500 bg-blue-500 max-w-sm'>
+            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001730223668211722/Screenshot_21.png" 
+            alt='mountain' className='w-full'/>
             <div className="px-6 py-4">
               <div className='font-bold text-xl mb-2 text-center'>
-                White Theme
+                Blue Theme
               </div>
 
             </div>
             <div className='justify-center items-center flex '>
-              <button onClick={whiteTheme} className="bg-gray-500  text-black w-[200px] transition-[0.5s] rounded-lg font-bold my-6 mx-auto py-3 ring-2 ring-gray-500 hover:ring-black hover:bg-black hover:shadow-xl hover:shadow-black hover:text-white hover:scale-110">
+              <button onClick={blueTheme} className="bg-white  text-blue-600 w-[200px] transition-[0.5s] rounded-lg font-bold my-6 mx-auto py-3 ring-2 ring-white hover:ring-blue-700 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-700 hover:text-blue-200 hover:scale-110">
                 Download
               </button>
             </div>
@@ -571,24 +574,24 @@ p{
         </div>
         {/* 3rd card */}
         <div className='py-10 text-white hover:scale-110 transition-[0.5s]'>
-          <div className='rounded-lg overflow-hidden shadow-lg max-w-sm shadow-pink-500 bg-gradient-to-r from-indigo-500 via-indigo-600 to-pink-600'>
-            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001739720914636842/Screenshot_22.png" alt='gradientTheme' className='w-full'/>
+          <div className='rounded-lg overflow-hidden shadow-lg max-w-sm shadow-red-600 bg-red-600'>
+            <img src="https://cdn.discordapp.com/attachments/916242216211595264/1001730224574169208/Screenshot_20.png" alt='mountain' className='w-full'/>
             <div className="px-6 py-4">
               <div className='font-bold text-xl mb-2 text-center'>
-                Gradient Theme
+                Red Theme
               </div>
 
             </div>
             <div className='justify-center items-center flex '>
-              <button onClick={gradientTheme} className="bg-white  text-red-600 w-[200px] transition-[0.5s] rounded-lg font-bold my-6 mx-auto py-3 ring-2 ring-white   hover:bg-gradient-to-r hover:from-purple-500 hover:via-indigo-600 hover:to-pink-600 hover:shadow-xl hover:shadow-red-800 hover:text-red-100 hover:scale-110" >
+              <button onClick={redTheme} className="bg-white  text-red-600 w-[200px] transition-[0.5s] rounded-lg font-bold my-6 mx-auto py-3 ring-2 ring-white hover:ring-red-800 hover:bg-red-800 hover:shadow-xl hover:shadow-red-800 hover:text-red-100 hover:scale-110" >
                 Download
               </button>
             </div>
           </div>
         </div>
       </div>
-      <Link to="/info"><button className="bg-white text-black w-[200px] text-center flex  justify-center transition-[0.5s] rounded-lg font-bold my-6 mx-auto py-3 ring-2 ring-white hover:ring-indigo-600 hover:bg-indigo-600  hover:shadow-xl hover:shadow-indigo-700 hover:text-white hover:scale-110">
-            Back
+      <Link to="/more"><button className="bg-white text-black w-[200px] text-center flex  justify-center transition-[0.5s] rounded-lg font-bold my-6 mx-auto py-3 ring-2 ring-white hover:ring-indigo-600 hover:bg-indigo-600  hover:shadow-xl hover:shadow-indigo-700 hover:text-white hover:scale-110">
+            More Themes
           </button></Link>
     </div>
   )

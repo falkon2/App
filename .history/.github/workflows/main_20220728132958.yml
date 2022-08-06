@@ -1,5 +1,4 @@
 name: Release
-CI: false
 on:
   push:
     tags:

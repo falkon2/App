@@ -5,7 +5,7 @@ import { Details } from './Pages/Details';
 import { Info } from './Pages/Info';
 import { About } from './Pages/About';
 import { InfoTwo } from './Pages/InfoTwo';
-import './index.css'
+
 function App() {
   return (
   <Routes>

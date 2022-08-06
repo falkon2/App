@@ -13,6 +13,3 @@ body{
   font-family: 'Roboto', sans-serif; 
 }
 
-.active{
-  @apply text-indigo-600 scale-125
-}
