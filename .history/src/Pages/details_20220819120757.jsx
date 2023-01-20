@@ -15,6 +15,7 @@ export const Details = () => {
         Hobby: '',
         Youtube: '',
       });
+
       const HandleSubmit = (e) => {
         e.preventDefault();
         if (Data.Name === ""){
@@ -47,6 +48,7 @@ export const Details = () => {
           navigate('/info');
         }
       }
+
   return (
     <div className="text-white font-poppins">
         <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
@@ -107,7 +109,7 @@ export const Details = () => {
                   id="Profession"
                   name="Profession"
                   type="Profession"
-                  autoComplete="Profession"
+                  autoComplete="current-Profession"
                   required
                   value={Data.Profession}
                   onChange={(e) => setData({ ...Data, Profession: e.target.value })}
@@ -123,7 +125,7 @@ export const Details = () => {
                   id="Nationality"
                   name="Nationality"
                   type="Nationality"
-                  autoComplete="Nationality"
+                  autoComplete="current-Nationality"
                   required
                   value={Data.Nationality}
                   onChange={(e) => setData({ ...Data, Nationality: e.target.value})}
@@ -139,7 +141,7 @@ export const Details = () => {
                   id="Hobby"
                   name="Hobby"
                   type="Hobby"
-                  autoComplete="Hobby"
+                  autoComplete="current-Hobby"
                   required
                   value={Data.Hobby}
                   onChange={(e) => setData({ ...Data, Hobby: e.target.value})}
@@ -155,7 +157,7 @@ export const Details = () => {
                   id="Youtube"
                   name="Youtube"
                   type="Youtube"
-                  autoComplete="Youtube"
+                  autoComplete="current-Youtube"
                   value={Data.Youtube}
                   onChange={(e) => setData({ ...Data, Youtube: e.target.value})}
                   className="appearance-none rounded-lg relative block w-full px-3 py-2 mt-2 border border-gray-300 placeholder-gray-500 text-gray-900  focus:outline-none focus:ring-indigo-500 focus:bg-gray-300 focus:border-indigo-500 focus:z-10 sm:text-sm"

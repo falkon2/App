@@ -15,6 +15,7 @@ export const Details = () => {
         Hobby: '',
         Youtube: '',
       });
+
       const HandleSubmit = (e) => {
         e.preventDefault();
         if (Data.Name === ""){
